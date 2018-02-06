@@ -1,24 +1,24 @@
 ## Here are your domain models. Please diagram them out before you write any code to ensure your understanding of the environment is complete.
 
  1. Environment
-    has_many :Zookeepers, through: :ZookeeperEnvironments
-    has_many :Species, through: :Animals
+    - has_many :Zookeepers, through: :ZookeeperEnvironments
+    - has_many :Species, through: :Animals
 
  2. ZookeeperEnvironment
-    belongs_to :Zookeeper
-    belongs_to :Environment
+    - belongs_to :Zookeeper
+    - belongs_to :Environment
 
  3. Zookeeper
-    has_many :Animals
-    has_many :Species, through: :Animals
-    has_many :Environments, through: :ZookeeperEnvironments
+    - has_many :Animals
+    - has_many :Species, through: :Animals
+    - has_many :Environments, through: :ZookeeperEnvironments
 
  4. Animals
-    belongs_to :Zookeeper
-    belongs_to :Species
+    - belongs_to :Zookeeper
+    - belongs_to :Species
 
  5. Species
-    has_many :Zookeepers, through: :Animals
+    - has_many :Zookeepers, through: :Animals
 
 ## Deliverables
 ### You should be able to create a new environment by running:
