@@ -1,6 +1,6 @@
 This project is a practice of a has-many-through relationship in Ruby. Flatiron just opened a new zoo with a ton of animals that need to be kept. The zoo has Environments such as desert or aquarium. Each Zookeeper has many Environments, depicted by the ZookeeperEnvironment class. Each Zookeeper is also responible for many Animals. Each Animal belongs to a Species. 
 
-# Here are your domain models. Please diagram them out before you write any code to ensure your understanding of the environment is complete.
+Here are your domain models. Please diagram them out before you write any code to ensure your understanding of the environment is complete.
 
  1. Environment
     - has_many :Zookeepers, through: :ZookeeperEnvironments
